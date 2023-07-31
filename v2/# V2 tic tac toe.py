@@ -251,7 +251,7 @@ def loadmem():
         ia_player2.epsilon = pickle.load(fichier)
 
 
-#loadmem() si besoins de load les élements déja enregistrer
+loadmem() #si besoins de load les élements déja enregistrer
 
 
 #### Pour changer le nombre de partie 
@@ -295,10 +295,10 @@ with open(
     pickle.dump(ia_player2.epsilon, fichier)
 
 
-for i in range(30):
-    print(i)
-    ia_player1.train()
-    ia_player2.train()
+#for i in range(30):
+#    print(i)
+#    ia_player1.train()
+#    ia_player2.train()
 
 
 len(ia_player1.memory)
